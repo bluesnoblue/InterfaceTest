@@ -1,0 +1,16 @@
+ENV = 'prd'
+
+if ENV == 'prd':
+    BASE_URL = 'http://httpbin.org'
+    TEST_USERNAME = 'test'
+    TEST_PASSWORD = '123456'
+
+elif ENV == 'dev':
+    BASE_URL = 'http://httpbin.org'
+    TEST_USERNAME = 'dev'
+    TEST_PASSWORD = '123456'
+
+else:
+    BASE_URL = 'http://httpbin.org'
+    TEST_USERNAME = 'dev'
+    TEST_PASSWORD = '123456'
