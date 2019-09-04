@@ -28,4 +28,6 @@ class Auth(BaseInterface):
     def logout(self):
         headers = self._get_headers(includes='token')
         response = requests.delete(BASE_URL + '/delete', headers=headers)
+        if response.status_code == 200:
+            self.token = ''   # 登出后自动保存token
         return response
