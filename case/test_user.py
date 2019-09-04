@@ -5,7 +5,7 @@ from CONFIG import TEST_USERNAME, TEST_PASSWORD
 
 
 @ddt
-class TestAuthBASE(unittest.TestCase):
+class TestUser(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
